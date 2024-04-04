@@ -14,7 +14,7 @@ return {
 			lsp.phpactor.setup({ capabilities = capabilities })
 			lsp.intelephense.setup({ capabilities = capabilities })
 			lsp.cssls.setup({ capabilities = capabilities })
-			lsp.jedi_language_server.setup({ capabilities = capabilities })
+			lsp.pyright.setup({ capabilities = capabilities })
 			lsp.rust_analyzer.setup({ capabilities = capabilities })
 			lsp.astro.setup({ capabilities = capabilities })
 			lsp.vuels.setup({ capabilities = capabilities })

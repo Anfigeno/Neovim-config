@@ -9,7 +9,7 @@ return {
 				"phpactor",
 				"intelephense",
 				"cssls",
-				"jedi_language_server",
+				"pyright",
 				"gopls",
 				"rust_analyzer",
 				"astro",
