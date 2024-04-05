@@ -12,16 +12,16 @@ return {
 		require("telescope").setup({
 			pickers = {
 				find_files = {
-					theme = "ivy",
+					theme = "dropdown",
 				},
 				live_grep = {
-					theme = "ivy",
+					theme = "dropdown",
 				},
 				buffers = {
-					theme = "ivy",
+					theme = "dropdown",
 				},
 				help_tags = {
-					theme = "ivy",
+					theme = "dropdown",
 				},
 			},
 		})

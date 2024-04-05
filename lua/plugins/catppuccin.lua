@@ -12,6 +12,8 @@ return {
 				notify = true,
 				telescope = true,
 				cmp = true,
+				gitsigns = true,
+				lsp_trouble = true,
 			},
 			custom_highlights = function(colors)
 				return {
@@ -19,6 +21,30 @@ return {
 					["@tag.attribute"] = { fg = colors.peach },
 					["@tag.delimiter"] = { fg = colors.subtext0 },
 					Operator = { fg = colors.red },
+
+					NoiceCmdlinePopupBorder = { fg = colors.crust },
+					NoiceCmdlinePopupTitle = { fg = colors.teal, bg = colors.base },
+
+					TelescopeTitle = { fg = colors.teal, bg = colors.base },
+
+					FloatBorder = { fg = colors.crust, bg = colors.base },
+					FloatTitle = { fg = colors.teal, bg = colors.base },
+
+					NeoTreeNormal = { fg = colors.text, bg = colors.base },
+					NeoTreeNormalNC = { fg = colors.text, bg = colors.base },
+
+					StatusLine = { fg = colors.crust, bg = colors.base },
+					StatusLineNC = { fg = colors.crust, bg = colors.base },
+
+					TroubleError = { fg = colors.red },
+					TroubleWarning = { fg = colors.yellow },
+					TroubleInformation = { fg = colors.blue },
+					TroubleHint = { fg = colors.green },
+					TroubleTextError = { fg = colors.red },
+					TroubleTextWarning = { fg = colors.yellow },
+					TroubleTextInformation = { fg = colors.blue },
+					TroubleTextHint = { fg = colors.green },
+					TroubleNormal = { fg = colors.text, bg = colors.base },
 
 					PmenuSel = { bg = colors.base, fg = "NONE" },
 					Pmenu = { fg = colors.overlay0, bg = colors.mantle },
@@ -40,10 +66,10 @@ return {
 					CmpItemKindConstructor = { fg = colors.surface1, bg = colors.yellow },
 					CmpItemKindReference = { fg = colors.surface1, bg = colors.yellow },
 
-					CmpItemKindFunction = { fg = colors.base, bg = colors.blue },
-					CmpItemKindStruct = { fg = colors.base, bg = colors.blue },
-					CmpItemKindClass = { fg = colors.base, bg = colors.blue },
-					CmpItemKindModule = { fg = colors.base, bg = colors.blue },
+					CmpItemKindFunction = { fg = colors.surface1, bg = colors.blue },
+					CmpItemKindStruct = { fg = colors.surface1, bg = colors.blue },
+					CmpItemKindClass = { fg = colors.surface1, bg = colors.blue },
+					CmpItemKindModule = { fg = colors.surface1, bg = colors.blue },
 					CmpItemKindOperator = { fg = colors.base, bg = colors.blue },
 
 					CmpItemKindVariable = { fg = colors.base, bg = colors.maroon },
@@ -60,6 +86,34 @@ return {
 					CmpItemKindInterface = { fg = colors.surface1, bg = colors.pink },
 					CmpItemKindColor = { fg = colors.surface1, bg = colors.pink },
 					CmpItemKindTypeParameter = { fg = colors.surface1, bg = colors.pink },
+
+					NavBuddyNormalFloat = { fg = colors.text, bg = colors.base },
+
+					NavBuddyField = { fg = colors.red },
+					NavBuddyProperty = { fg = colors.red },
+					NavBuddyEvent = { fg = colors.red },
+
+					NavBuddyText = { fg = colors.green },
+					NavBuddyEnum = { fg = colors.green },
+					NavBuddyKeyword = { fg = colors.green },
+
+					NavBuddyConstant = { fg = colors.yellow },
+					NavBuddyConstructor = { fg = colors.yellow },
+					NavBuddyReference = { fg = colors.yellow },
+
+					NavBuddyFunction = { fg = colors.blue, bg = "NONE", bold = true },
+					NavBuddyClass = { fg = colors.blue, bg = "NONE", bold = true },
+					NavBuddyModule = { fg = colors.blue, bg = "NONE", bold = true },
+					NavBuddyOperator = { fg = colors.blue, bg = "NONE", bold = true },
+
+					NavBuddyVariable = { fg = colors.maroon },
+					NavBuddyFile = { fg = colors.maroon },
+
+					NavBuddyMethod = { fg = colors.teal },
+					NavBuddyValue = { fg = colors.teal },
+					NavBuddyEnumMember = { fg = colors.teal },
+
+					NavBuddyInterface = { fg = colors.pink },
 				}
 			end,
 		})

@@ -7,6 +7,10 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.clipboard = "unnamedplus"
 vim.opt.laststatus = 0
+vim.api.nvim_set_hl(0, "Statusline", { link = "Normal" })
+vim.api.nvim_set_hl(0, "StatuslineNC", { link = "Normal" })
+local str = string.rep("─", vim.api.nvim_win_get_width(0))
+vim.opt.statusline = str
 
 if vim.g.neovide then
 	vim.opt.guifont = "Monaspace Neon:h10"
