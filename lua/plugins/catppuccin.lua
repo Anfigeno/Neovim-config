@@ -70,14 +70,14 @@ return {
 					CmpItemKindStruct = { fg = colors.surface1, bg = colors.blue },
 					CmpItemKindClass = { fg = colors.surface1, bg = colors.blue },
 					CmpItemKindModule = { fg = colors.surface1, bg = colors.blue },
-					CmpItemKindOperator = { fg = colors.base, bg = colors.blue },
+					CmpItemKindOperator = { fg = colors.surface1, bg = colors.blue },
 
-					CmpItemKindVariable = { fg = colors.base, bg = colors.maroon },
-					CmpItemKindFile = { fg = colors.base, bg = colors.maroon },
+					CmpItemKindVariable = { fg = colors.surface1, bg = colors.maroon },
+					CmpItemKindFile = { fg = colors.surface1, bg = colors.maroon },
 
-					CmpItemKindUnit = { fg = colors.base, bg = colors.mauve },
-					CmpItemKindSnippet = { fg = colors.base, bg = colors.mauve },
-					CmpItemKindFolder = { fg = colors.base, bg = colors.mauve },
+					CmpItemKindUnit = { fg = colors.surface1, bg = colors.mauve },
+					CmpItemKindSnippet = { fg = colors.surface1, bg = colors.mauve },
+					CmpItemKindFolder = { fg = colors.surface1, bg = colors.mauve },
 
 					CmpItemKindMethod = { fg = colors.surface1, bg = colors.teal },
 					CmpItemKindValue = { fg = colors.surface1, bg = colors.teal },
@@ -86,6 +86,8 @@ return {
 					CmpItemKindInterface = { fg = colors.surface1, bg = colors.pink },
 					CmpItemKindColor = { fg = colors.surface1, bg = colors.pink },
 					CmpItemKindTypeParameter = { fg = colors.surface1, bg = colors.pink },
+
+					CmpItemKindCodeium = { fg = colors.surface1, bg = colors.rosewater },
 
 					NavBuddyNormalFloat = { fg = colors.text, bg = colors.base },
 
