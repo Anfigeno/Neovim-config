@@ -3,7 +3,6 @@ return {
 		"hrsh7th/nvim-cmp",
 		dependencies = {
 			"onsails/lspkind.nvim",
-			"hrsh7th/cmp-nvim-lsp-signature-help",
 			"windwp/nvim-autopairs",
 
 			"L3MON4D3/LuaSnip",

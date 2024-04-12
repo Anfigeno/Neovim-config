@@ -9,7 +9,7 @@ return {
 			highlights = {
 				FloatBorder = {
 					guibg = colors.base,
-					guifg = colors.crust,
+					guifg = colors.mauve,
 				},
 			},
 			float_opts = {

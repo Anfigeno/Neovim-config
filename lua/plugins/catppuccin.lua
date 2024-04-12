@@ -22,19 +22,21 @@ return {
 					["@tag.delimiter"] = { fg = colors.subtext0 },
 					Operator = { fg = colors.red },
 
-					NoiceCmdlinePopupBorder = { fg = colors.crust },
-					NoiceCmdlinePopupTitle = { fg = colors.teal, bg = colors.base },
+          BufferLineFill = { bg = colors.base },
 
-					TelescopeTitle = { fg = colors.teal, bg = colors.base },
+					NoiceCmdlinePopupBorder = { fg = colors.mauve },
+					NoiceCmdlinePopupTitle = { fg = colors.mauve, bg = colors.base },
 
-					FloatBorder = { fg = colors.crust, bg = colors.base },
-					FloatTitle = { fg = colors.teal, bg = colors.base },
+					TelescopeTitle = { fg = colors.mauve, bg = colors.base },
+
+					FloatBorder = { fg = colors.mauve, bg = colors.base },
+					FloatTitle = { fg = colors.mauve, bg = colors.base },
 
 					NeoTreeNormal = { fg = colors.text, bg = colors.base },
 					NeoTreeNormalNC = { fg = colors.text, bg = colors.base },
 
-					StatusLine = { fg = colors.crust, bg = colors.base },
-					StatusLineNC = { fg = colors.crust, bg = colors.base },
+					StatusLine = { fg = colors.mauve, bg = colors.base },
+					StatusLineNC = { fg = colors.mauve, bg = colors.base },
 
 					TroubleError = { fg = colors.red },
 					TroubleWarning = { fg = colors.yellow },
