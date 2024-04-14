@@ -3,6 +3,7 @@ return {
 	config = function()
 		require("mason-lspconfig").setup({
 			ensure_installed = {
+				"svelte",
 				"lua_ls",
 				"phpactor",
 				"intelephense",
