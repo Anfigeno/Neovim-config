@@ -15,6 +15,12 @@ return {
 				gitsigns = true,
 				lsp_trouble = true,
 			},
+			styles = {
+				comments = { "italic" },
+				keywords = { "italic" },
+				strings = { "italic" },
+				variables = { "bold" },
+			},
 			custom_highlights = function(colors)
 				return {
 					["@tag"] = { fg = colors.red },
@@ -22,7 +28,7 @@ return {
 					["@tag.delimiter"] = { fg = colors.subtext0 },
 					Operator = { fg = colors.red },
 
-          BufferLineFill = { bg = colors.base },
+					BufferLineFill = { bg = colors.base },
 
 					NoiceCmdlinePopupBorder = { fg = colors.mauve },
 					NoiceCmdlinePopupTitle = { fg = colors.mauve, bg = colors.base },
