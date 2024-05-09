@@ -8,6 +8,8 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lsp = require("lspconfig")
 
+			lsp.docker_compose_language_service.setup({ capabilities = capabilities })
+			lsp.dockerls.setup({ capabilities = capabilities })
 			lsp.svelte.setup({ capabilities = capabilities })
 			lsp.jdtls.setup({ capabilities = capabilities })
 			lsp.lua_ls.setup({ capabilities = capabilities })
@@ -35,8 +37,8 @@ return {
 					"svelte",
 					"typescriptreact",
 					"vue",
-					"php",
 					"blade",
+					"php",
 				},
 			})
 

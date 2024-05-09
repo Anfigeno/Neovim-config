@@ -15,6 +15,8 @@ return {
 				"tsserver",
 				"prismals",
 				"jdtls",
+				"docker_compose_language_service",
+				"dockerls",
 			},
 		})
 	end,

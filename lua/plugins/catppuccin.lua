@@ -5,6 +5,28 @@ return {
 	lazy = false,
 	config = function()
 		require("catppuccin").setup({
+			color_overrides = {
+				mocha = {
+					base = "#222430",
+					mantle = "#191b24",
+					crust = "#111218",
+
+					red = "#ff5263",
+					maroon = "#ff7d81",
+					mauve = "#e882ff",
+					flamingo = "#e4adff",
+					rosewater = "#e4adff",
+					pink = "#e4adff",
+					blue = "#8B93FF",
+					lavender = "#8bb6ff",
+					sky = "#6ae4fc",
+					green = "#8eeda1",
+					lima = "#bfed8e",
+					yellow = "#ffe780",
+					peach = "#fc9b74",
+					text = "#c3c5d5",
+				},
+			},
 			integrations = {
 				neotree = true,
 				treesitter = true,
@@ -27,22 +49,30 @@ return {
 					["@tag.attribute"] = { fg = colors.peach },
 					["@tag.delimiter"] = { fg = colors.subtext0 },
 					Operator = { fg = colors.red },
+					-- Keyword = { fg = colors.red },
+					-- Function = { fg = colors.green },
+					-- Conditional = { fg = colors.blue },
+					-- Include = { fg = colors.sky },
+					-- Type = { fg = colors.blue },
 
 					BufferLineFill = { bg = colors.base },
 
-					NoiceCmdlinePopupBorder = { fg = colors.mauve },
-					NoiceCmdlinePopupTitle = { fg = colors.mauve, bg = colors.base },
+					NoiceCmdlinePopupBorder = { fg = colors.red },
+					NoiceCmdlinePopupTitle = { fg = colors.red, bg = colors.base },
 
-					TelescopeTitle = { fg = colors.mauve, bg = colors.base },
+					TelescopeTitle = { fg = colors.red, bg = colors.base },
 
-					FloatBorder = { fg = colors.mauve, bg = colors.base },
-					FloatTitle = { fg = colors.mauve, bg = colors.base },
+					FloatBorder = { fg = colors.red, bg = colors.base },
+					FloatTitle = { fg = colors.red, bg = colors.base },
 
 					NeoTreeNormal = { fg = colors.text, bg = colors.base },
 					NeoTreeNormalNC = { fg = colors.text, bg = colors.base },
+					NeoTreeDirectoryIcon = { fg = colors.maroon, bg = colors.base },
+					NeoTreeDirectoryName = { fg = colors.maroon, bg = colors.base },
+					NeoTreeRootName = { fg = colors.maroon, bg = colors.base },
 
-					StatusLine = { fg = colors.mauve, bg = colors.base },
-					StatusLineNC = { fg = colors.mauve, bg = colors.base },
+					StatusLine = { fg = colors.red, bg = colors.base },
+					StatusLineNC = { fg = colors.red, bg = colors.base },
 
 					TroubleError = { fg = colors.red },
 					TroubleWarning = { fg = colors.yellow },
@@ -58,9 +88,9 @@ return {
 					Pmenu = { fg = colors.overlay0, bg = colors.mantle },
 
 					CmpItemAbbrDeprecated = { fg = colors.surface2, bg = "NONE", strikethrough = true },
-					CmpItemAbbrMatch = { fg = colors.mauve, bg = "NONE", bold = true },
-					CmpItemAbbrMatchFuzzy = { fg = colors.mauve, bg = "NONE", bold = true },
-					CmpItemMenu = { fg = colors.mauve, bg = "NONE", italic = true },
+					CmpItemAbbrMatch = { fg = colors.red, bg = "NONE", bold = true },
+					CmpItemAbbrMatchFuzzy = { fg = colors.red, bg = "NONE", bold = true },
+					CmpItemMenu = { fg = colors.red, bg = "NONE", italic = true },
 
 					CmpItemKindField = { fg = colors.surface1, bg = colors.red },
 					CmpItemKindProperty = { fg = colors.surface1, bg = colors.red },

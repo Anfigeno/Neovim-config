@@ -1,4 +1,6 @@
 return {
 	"arnamak/stay-centered.nvim",
-	opts = {},
+	opts = {
+		skip_filetypes = { "Telescope" },
+	},
 }
