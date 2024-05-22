@@ -1,27 +1,27 @@
 return {
 	"Djancyp/better-comments.nvim",
 	config = function()
-		local colors = require("catppuccin.palettes").get_palette("mocha")
+		local colores = require("mestizo").paleta()
 		require("better-comment").Setup({
 			tags = {
 				{
 					name = "PENDIENTE",
-					fg = colors.surface1,
-					bg = colors.blue,
+					fg = colores.vacio,
+					bg = colores.turquesa,
 					bold = true,
 					virtual_text = "",
 				},
 				{
 					name = "ARREGLAR",
-					fg = colors.surface1,
-					bg = colors.red,
+					fg = colores.vacio,
+					bg = colores.rojo,
 					bold = true,
 					virtual_text = "",
 				},
 				{
 					name = "ADVERTENCIA",
-					fg = colors.surface1,
-					bg = colors.yellow,
+					fg = colores.vacio,
+					bg = colores.amarillo,
 					bold = true,
 					virtual_text = "",
 				},

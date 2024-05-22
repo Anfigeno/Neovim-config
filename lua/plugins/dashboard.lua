@@ -22,7 +22,6 @@ return {
 				center = {
 					{
 						desc = "[  Anfigeno ] [ 󰑍 Anfigeno ] [ 󰗃 anfigenos ]",
-						desc_hl = "conditional",
 					},
 				},
 			},

@@ -24,6 +24,11 @@ return {
 					theme = "dropdown",
 				},
 			},
+			defaults = {
+				prompt_prefix = "󰼛 ",
+
+				selection_caret = "󱞩 ",
+			},
 		})
 	end,
 }

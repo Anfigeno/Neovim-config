@@ -4,7 +4,7 @@ return {
 	cmd = "Silicon",
 	config = function()
 		require("silicon").setup({
-			theme = "Catppuccin Mocha",
+			theme = "Mestizo",
 			font = "Monaspace Neon Medium=40",
 			num_separator = " ",
 			line_pad = 8,

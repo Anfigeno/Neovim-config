@@ -1,12 +1,13 @@
 return {
 	"mvllow/modes.nvim",
 	config = function()
+		local colores = require("mestizo").paleta()
 		require("modes").setup({
 			colors = {
-				copy = "#f9e2af",
-				delete = "#f38ba8",
-				insert = "#89b4fa",
-				visual = "#cba6f7",
+				copy = colores.amarillo,
+				delete = colores.rojo,
+				insert = colores.azul,
+				visual = colores.magenta,
 			},
 			line_opacity = 0.20,
 			set_cursor = true,

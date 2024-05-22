@@ -1,7 +1,8 @@
 return {
 	"akinsho/bufferline.nvim",
-	after = "catppuccin",
+	after = "mestizo",
 	config = function()
+		local colores = require("mestizo").paleta()
 		require("bufferline").setup({
 			options = {
 				indicator = {
@@ -25,7 +26,6 @@ return {
 					return s
 				end,
 			},
-			highlights = require("catppuccin.groups.integrations.bufferline").get(),
 		})
 
 		vim.keymap.set("n", "<tab>", "<cmd>BufferLineCycleNext<cr>")
