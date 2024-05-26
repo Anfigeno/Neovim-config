@@ -25,7 +25,7 @@ return {
 						local kind = lspkind.cmp_format({
 							mode = "symbol_text",
 							maxwidth = 50,
-							symbol_map = { Codeium = "󰅪" },
+							symbol_map = { Codeium = "󰅪", Supermaven = "󰓎" },
 						})(entry, vim_item)
 						local strings = vim.split(kind.kind, "%s", { trimempty = true })
 						kind.kind = " " .. (strings[1] or "") .. " "

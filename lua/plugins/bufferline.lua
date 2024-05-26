@@ -2,7 +2,21 @@ return {
 	"akinsho/bufferline.nvim",
 	after = "mestizo",
 	config = function()
-		local colores = require("mestizo").paleta()
+		local function dividir_string(str, delimitador)
+			local resultado = {}
+			for match in (str .. delimitador):gmatch("(.-)" .. delimitador) do
+				table.insert(resultado, match)
+			end
+			return resultado
+		end
+
+		local function obtener_nombre_directorio_activo()
+			local ruta_completa = vim.fn.getcwd()
+			local partes_ruta = dividir_string(ruta_completa, "/")
+
+			return partes_ruta[#partes_ruta - 1]
+		end
+
 		require("bufferline").setup({
 			options = {
 				indicator = {
@@ -10,8 +24,7 @@ return {
 				},
 				offsets = {
 					{
-						filetype = "NvimTree",
-						text = "NvimTree",
+						filetype = "neo-tree",
 						highlight = "Operator",
 						separator = true,
 					},

@@ -11,6 +11,6 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "gD", "<cmd>Navbuddy<cr>")
+		vim.keymap.set("n", "gG", "<cmd>Navbuddy<cr>")
 	end,
 }

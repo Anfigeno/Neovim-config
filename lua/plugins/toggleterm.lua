@@ -1,25 +1,30 @@
 return {
 	"akinsho/toggleterm.nvim",
 	version = "*",
+	dependencies = {
+		"ryanmsnyder/toggleterm-manager.nvim",
+		"nvim-telescope/telescope.nvim",
+	},
 	config = function()
-		local colors = require("catppuccin.palettes").get_palette("mocha")
+		local colores = require("mestizo").paleta()
 
 		require("toggleterm").setup({
 			open_mapping = [[<c-k>]],
 			highlights = {
 				FloatBorder = {
-					guibg = colors.base,
-					guifg = colors.red,
+					guibg = colores.base,
+					guifg = colores.rojo,
 				},
 			},
 			float_opts = {
 				border = "curved",
 			},
+			start_in_insert = true,
 			shade_terminals = false,
+			autochdir = false,
+			direction = "vertical",
 		})
 
-		vim.keymap.set("n", "<c-l>s", "<cmd>ToggleTerm size=10 direction=horizontal<cr>")
-		vim.keymap.set("n", "<c-l>v", "<cmd>ToggleTerm size=80 direction=vertical<cr>")
-		vim.keymap.set("n", "<c-l>f", "<cmd>ToggleTerm direction=float<cr>")
+		vim.keymap.set("n", "<space>fk", "<cmd>Telescope toggleterm_manager<cr>")
 	end,
 }
