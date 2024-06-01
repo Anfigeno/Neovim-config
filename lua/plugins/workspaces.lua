@@ -4,7 +4,11 @@ return {
 	config = function()
 		require("workspaces").setup({
 			hooks = {
-				open = { "Neotree toggle" },
+				open = {
+					function()
+						require("edgy").toggle("left")
+					end,
+				},
 			},
 		})
 

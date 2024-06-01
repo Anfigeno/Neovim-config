@@ -12,6 +12,9 @@ return {
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
 			"hrsh7th/cmp-cmdline",
+			"lukas-reineke/cmp-rg",
+			"hrsh7th/cmp-calc",
+			"SergioRibera/cmp-dotenv",
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -58,6 +61,9 @@ return {
 					{ name = "luasnip", priority = 800 },
 					{ name = "buffer", priority = 700 },
 					{ name = "nvim_lsp_signature_help", priority = 600 },
+					{ name = "rg" },
+					{ name = "calc" },
+					{ name = "dotenv" },
 				}),
 			})
 
